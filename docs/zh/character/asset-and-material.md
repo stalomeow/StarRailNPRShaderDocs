@@ -1,10 +1,12 @@
-# 使用资产处理器
+# 资产和材质
+
+## 使用资产处理器
 
 在导入资产后，如果它的路径满足一定要求，资产处理器会自动将预设应用到该资产上，不需要再手动修改资产的设置。对于模型，还能自动平滑它的法线。
 
 可以在 `Project Settings/StarRail NPR Shader/HSR Asset Processors` 中配置资产处理器。
 
-![资产处理器](../assets/asset-processor.png)
+![资产处理器](../../assets/asset-processor.png)
 
 - `Match Mode`：资产的匹配方式。
 
@@ -24,3 +26,9 @@
 - `Ignore Case`：匹配时是否忽略大小写。
 - `Custom Preset`：自定义预设。如果为空则使用默认的预设。
 - `Smooth Normal Store Mode`：模型平滑法线的保存方式。
+
+## 材质
+
+- 在设置 Material 之前，必须先借助资产处理器处理贴图、平滑法线。
+- Material 换 Shader 以后记得先 Reset 一下。
+- 没有描边/边缘光的话，在 Material 上面调整一下 `Model Scale`。

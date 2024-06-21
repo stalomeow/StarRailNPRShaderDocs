@@ -1,20 +1,12 @@
-# Setup a Character
-
-## Materials
-
-- Before setting up the Material, it is necessary to process textures and smooth normals using asset processors.
-- After changing the Material's Shader, remember to reset it.
-- If there is no outline/rim light, adjust the `Model Scale` on the Material.
-
-## Character Rendering Controller
+# Rendering Controller
 
 The `StarRail Character Rendering Controller` component is automatically added to the root object of the character.
 
-![Character rendering controller](../assets/character-rendering-controller.png)
+![Character rendering controller](../../assets/character-rendering-controller.png)
 
 This component makes it easy to control some rendering parameters. The relevant C# API is as follows:
 
-### Properties
+## Properties
 
 |Name|Description|
 |:-|:-|
@@ -25,23 +17,12 @@ This component makes it easy to control some rendering parameters. The relevant 
 |ExpressionShadowIntensity|Darkening of the face. Range $[0, 1]$.|
 |IsCastingShadow|Whether to cast shadows.|
 
-### Methods
+## Methods
 
 |Name|Description|
 |:-|:-|
 |UpdateRendererList|Update the internal cached list of `Renderer` in the controller.|
 
-### SRP Batcher
+## SRP Batcher
 
 This component uses [`MaterialPropertyBlock`](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) and does not support [SRP Batcher](https://docs.unity3d.com/Manual/SRPBatcher.html) in Editor. However, [`Renderer.material`](https://docs.unity3d.com/ScriptReference/Renderer-material.html) will be used after Build to support SRP Batcher.
-
-## For MMD Models
-
-Additional steps are required:
-
-- Change the `Model Type` to `MMD` on the material.
-- Drag the `Transform` of the head bone to the `Head Bone` field.
-
-    ![Sync Head Bone](../assets/mmd-head-bone-sync.png)
-
-**Note that** MMD models do not contain some detailed information so the final rendering result may not fully meet your expectation.

@@ -1,10 +1,17 @@
 # StarRail NPR Shader Docs
 
+!!! abstract ""
+
+    <p style="font-size:1.2rem;text-align:center;font-weight:bold;">
+    May this journey<br>
+    lead us starward
+    </p>
+
 Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. The shaders are not 100% accurate because this project is not a reverse engineering - what I do is to replicate the in-game looks to the best of my ability.
 
 |Sparkle|Firefly|
 |:-:|:-:|
-|![sparkle](assets/sparkle.png)|![firefly](assets/firefly.png)|
+|![Sparkle](../assets/sparkle.png)|![Firefly](../assets/firefly.png)|
 
 ## Features
 
@@ -26,11 +33,7 @@ Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: St
 - Characters receive only scene shadows and ignore self-shadows.
 - Per-object shadow, supporting up to 16 shadows on the same screen.
 - Custom bloom using the method shared by Jack He in Unite 2018.
-- Custom ACES tonemapping. The formula is
-
-    $$f(x)=\frac{x(ax+b)}{x(cx+d)+e}$$
-
-    where $a,b,c,d,e$ are all parameters.
+- Custom Tonemapping.
 
 ### Editor
 

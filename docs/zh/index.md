@@ -1,10 +1,16 @@
 # StarRail NPR Shader 文档
 
+!!! abstract ""
+
+    <p style="font-size:1.2rem;text-align:center;font-weight:bold;">
+    愿此行，终抵群星
+    </p>
+
 这是基于 Unity URP 的仿星穹铁道渲染 Shader。这不是逆向工程，Shader 代码不可能和游戏里的一模一样，我只是尽力去还原渲染效果。
 
 |花火|流萤|
 |:-:|:-:|
-|![sparkle](assets/sparkle.png)|![firefly](assets/firefly.png)|
+|![花~火~大~人~](../assets/sparkle.png)|![流~萤~老~婆~](../assets/firefly.png)|
 
 ## 特点
 
@@ -26,11 +32,7 @@
 - 角色只接收场景阴影，忽略自身阴影。
 - 逐物体阴影，同屏最多 16 个。
 - 自定义 Bloom 效果。用的贺甲在 Unite 2018 上分享的方法。
-- 自定义 ACES tonemapping。公式是
-
-    $$f(x)=\frac{x(ax+b)}{x(cx+d)+e}$$
-
-    其中 $a,b,c,d,e$ 都是参数。
+- 自定义 Tonemapping。
 
 ### 编辑器
 
