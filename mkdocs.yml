@@ -1,0 +1,111 @@
+site_name: StarRail NPR Shader Docs
+site_description: "Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail."
+repo_name: stalomeow/StarRailNPRShader
+repo_url: https://github.com/stalomeow/StarRailNPRShader
+
+theme:
+  name: material
+  language: en
+  favicon: assets/favicon.ico
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/circle-slice-4
+        name: Auto Mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/circle-slice-8
+        name: Light Mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/circle-outline
+        name: Dark Mode
+
+extra_javascript:
+  # - assets/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-chtml.js # 别加 mml！它会导致表格横向溢出！
+  - https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.6/tex-chtml.js
+
+markdown_extensions:
+  - abbr
+  - tables
+  - attr_list
+  - md_in_html
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      # auto_title: true
+      linenums: true
+      anchor_linenums: true
+      use_pygments: true
+      line_spans: __span # When this option is set, each line of a code block is wrapped in a span, which is essential for features like line highlighting to work correctly
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - toc:
+      # https://python-markdown.github.io/extensions/toc/
+      permalink: true
+      separator: "-"
+      # 生成可读的 unicode slug
+      # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#+toc.slugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 简体中文
+          build: true
+          site_name: StarRail NPR Shader 文档
+          nav_translations:
+            Installation: 安装
+            A Rough Flow Chart of This Pipeline: 该管线的大致流程图
+            Working with Asset Processor: 使用资产处理器
+            Setup a Character: 配置一个角色
+            Automatic Material Setup: 自动设置 Material
+
+nav:
+  - index.md
+  - Installation: installation.md
+  - A Rough Flow Chart of This Pipeline: a-rough-flow-chart-of-this-pipeline.md
+  - Working with Asset Processor: working-with-asset-processor.md
+  - Setup a Character: setup-a-character.md
+  - Automatic Material Setup: automatic-material-setup.md
