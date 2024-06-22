@@ -1,51 +1,27 @@
 # StarRail NPR Shader Docs
 
-!!! abstract ""
-
-    <p style="font-size:1.2rem;text-align:center;font-weight:bold;">
-    May this journey<br>
-    lead us starward
-    </p>
-
-Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. The shaders are not 100% accurate because this project is not a reverse engineering - what I do is to replicate the in-game looks to the best of my ability.
+Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. The shaders are not 100% accurate because this project is not a reverse engineering - what I do is to replicate the in-game looks to the best of my ability. <img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-1.png">
 
 |Sparkle|Firefly|
 |:-:|:-:|
 |![Sparkle](../assets/sparkle.png)|![Firefly](../assets/firefly.png)|
 
-## Features
+## Core Features
 
-### Character Shaders
+- Supports both Game model and MMD model.
+- Supports Forward and Forward+ rendering paths.
+- Supports per-object shadow, up to 16 on the same screen.
+- Custom Bloom and Tonemapping.
+- Custom material editor.
+- Automated workflow (smoothing normals, setting up textures, generating materials, building), integrated with Unity Preset system.
 
-- Honkai Star Rail/Character/Body
-- Honkai Star Rail/Character/Body (Transparent)
-- Honkai Star Rail/Character/EyeShadow
-- Honkai Star Rail/Character/Face
-- Honkai Star Rail/Character/FaceMask
-- Honkai Star Rail/Character/Hair
+## Sponsor
 
-### Rendering
-
-- Both Game model and MMD model.
-- Support `Forward` and `Forward+` rendering paths.
-- A single `RendererFeature` to manage all custom passes.
-- Provide C# API to control some rendering behavior.
-- Characters receive only scene shadows and ignore self-shadows.
-- Per-object shadow, supporting up to 16 shadows on the same screen.
-- Custom bloom using the method shared by Jack He in Unite 2018.
-- Custom Tonemapping.
-
-### Editor
-
-- Customized material editor.
-- Configurable asset processor integrated with Unity preset system.
-- Automatically smooth normal.
-- Automatic material setup.
-- Build processor and Shader stripper.
-- `material.json` inspector.
+If you like this project, you can sponsor Firefly <img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-3.png"> with an Oak Cake Rolls, chirp! Link: [https://stalomeow.com/#coffee](https://stalomeow.com/#coffee){target="_blank"}. Currently, only Chinese payment methods are supported ~
 
 ## Special Thanks
 
-- miHoYo / HoYoverse
-- Razmoth
+- [miHoYo](https://mihoyo.com/){target="_blank"} / [HoYoverse](https://hoyoverse.com/){target="_blank"}
+- [Razmoth](https://github.com/Razmoth){target="_blank"}
+- [m4urlcl0](https://github.com/m4urlclo0){target="_blank"}
 - °Nya°222

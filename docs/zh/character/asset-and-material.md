@@ -27,6 +27,15 @@
 - `Custom Preset`：自定义预设。如果为空则使用默认的预设。
 - `Smooth Normal Store Mode`：模型平滑法线的保存方式。
 
+## 着色器
+
+- Honkai Star Rail/Character/Body
+- Honkai Star Rail/Character/Body (Transparent)
+- Honkai Star Rail/Character/EyeShadow
+- Honkai Star Rail/Character/Face
+- Honkai Star Rail/Character/FaceMask
+- Honkai Star Rail/Character/Hair
+
 ## 材质
 
 - 在设置 Material 之前，必须先借助资产处理器处理贴图、平滑法线。

@@ -1,50 +1,27 @@
 # StarRail NPR Shader 文档
 
-!!! abstract ""
-
-    <p style="font-size:1.2rem;text-align:center;font-weight:bold;">
-    愿此行，终抵群星
-    </p>
-
-这是基于 Unity URP 的仿星穹铁道渲染 Shader。这不是逆向工程，Shader 代码不可能和游戏里的一模一样，我只是尽力去还原渲染效果。
+基于 Unity URP 的仿星穹铁道渲染 Shader。这不是逆向工程，Shader 代码不可能和游戏里的一模一样，我只是尽力去还原渲染效果。<img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-1.png">
 
 |花火|流萤|
 |:-:|:-:|
 |![花~火~大~人~](../assets/sparkle.png)|![流~萤~老~婆~](../assets/firefly.png)|
 
-## 特点
+## 核心特点
 
-### 角色着色器
+- 支持解包模型和 MMD 模型。
+- 支持 Forward 和 Forward+ 渲染路径。
+- 支持逐物体阴影，同屏最多 16 个。
+- 定制的 Bloom 和 Tonemapping。
+- 定制的材质编辑器。
+- 自动化流程（平滑模型法线、设置贴图、生成材质、构建），集成 Unity Preset 系统。
 
-- Honkai Star Rail/Character/Body
-- Honkai Star Rail/Character/Body (Transparent)
-- Honkai Star Rail/Character/EyeShadow
-- Honkai Star Rail/Character/Face
-- Honkai Star Rail/Character/FaceMask
-- Honkai Star Rail/Character/Hair
+## 赞助
 
-### 渲染
-
-- 支持游戏模型和 MMD 模型。
-- 支持 `Forward` 和 `Forward+` 渲染路径。
-- 一个 `RendererFeature` 管理所有自定义 pass。
-- 提供 C# API 来控制一些渲染行为。
-- 角色只接收场景阴影，忽略自身阴影。
-- 逐物体阴影，同屏最多 16 个。
-- 自定义 Bloom 效果。用的贺甲在 Unite 2018 上分享的方法。
-- 自定义 Tonemapping。
-
-### 编辑器
-
-- 定制的 Material 编辑器。
-- 与 Unity Preset 系统集成的可配置资产处理器。
-- 自动平滑法线。
-- 自动设置 Material。
-- Build processor 和 Shader stripper。
-- `material.json` inspector。
+如果你喜欢这个项目，可以赞助流萤 <img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-3.png"> 一份橡木蛋糕卷啾！链接：[https://stalomeow.com/#coffee](https://stalomeow.com/#coffee){target="_blank"}。暂时不支持海外赞助哦 ~
 
 ## 特别感谢
 
-- miHoYo / HoYoverse
-- Razmoth
+- [miHoYo](https://mihoyo.com/){target="_blank"} / [HoYoverse](https://hoyoverse.com/){target="_blank"}
+- [Razmoth](https://github.com/Razmoth){target="_blank"}
+- [m4urlcl0](https://github.com/m4urlclo0){target="_blank"}
 - °Nya°222

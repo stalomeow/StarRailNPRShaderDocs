@@ -119,6 +119,7 @@ plugins:
           name: 简体中文
           build: true
           site_name: StarRail NPR Shader 文档
+          site_description: 基于 Unity URP 的仿星穹铁道渲染 Shader
           theme:
             logo: assets/logo-zh.png
           nav_translations:
@@ -129,7 +130,7 @@ plugins:
             Rendering Controller: 渲染控制器
             MMD Model: MMD 模型
             Advanced: 高级
-            Material Automation: 自动设置材质
+            Generate Material Automatically: 自动生成材质
             A Rough Flow Chart of This Pipeline: 该管线的大致流程图
 
 nav:
@@ -140,5 +141,5 @@ nav:
     - Rendering Controller: character/rendering-controller.md
     - MMD Model: character/mmd-model.md
   - Advanced:
-    - Material Automation: advanced/material-automation.md
+    - Generate Material Automatically: advanced/generate-material-automatically.md
     - A Rough Flow Chart of This Pipeline: advanced/a-rough-flow-chart-of-this-pipeline.md

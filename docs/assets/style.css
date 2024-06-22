@@ -1,3 +1,26 @@
+/* #region 表格相关 */
+
+.md-typeset__table {
+    display: block !important;
+    width: 100% !important;
+}
+
+.md-typeset__table table {
+    display: table !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* #endregion */
+
+/* #region Mermaid 居中 */
+
+.mermaid {
+    text-align: center;
+}
+
+/* #endregion */
+
 /* #region 图片 caption 样式 */
 
 .md-typeset figcaption {
@@ -48,6 +71,18 @@
         height: 8rem;
         text-align: center;
     }
+}
+
+/* #endregion */
+
+/* #region 表情包 */
+
+.md-custom-sticker {
+    display: inline-block;
+    margin: 0 10px;
+    width: 60px !important;
+    height: 60px !important;
+    vertical-align: text-bottom;
 }
 
 /* #endregion */

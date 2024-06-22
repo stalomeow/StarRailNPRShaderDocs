@@ -27,6 +27,15 @@ You can configure the asset processor in `Project Settings/StarRail NPR Shader/H
 - `Custom Preset`: Custom preset. If empty, the default preset is used.
 - `Smooth Normal Store Mode`: The mode for storing smoothed normals in models.
 
+## Shaders
+
+- Honkai Star Rail/Character/Body
+- Honkai Star Rail/Character/Body (Transparent)
+- Honkai Star Rail/Character/EyeShadow
+- Honkai Star Rail/Character/Face
+- Honkai Star Rail/Character/FaceMask
+- Honkai Star Rail/Character/Hair
+
 ## Materials
 
 - Before setting up the Material, it is necessary to process textures and smooth normals using asset processors.
