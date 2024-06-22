@@ -101,7 +101,7 @@ def wrap_img(match: re.Match, skip_class, meta):
 
 def on_page_content(html, page, config, **kwargs):
     # skip emoji img with index as class name from pymdownx.emoji https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
-    skip_class = ["emojione", "twemoji", "gemoji"]
+    skip_class = ["emojione", "twemoji", "gemoji", "no-fancybox"]
     return re.compile(r"<img(?P<attr>.*?)>").sub(lambda match: wrap_img(match, skip_class, page.meta), html)
 
 # 放在 blog 之后执行，更新首页 excerpt 的内容

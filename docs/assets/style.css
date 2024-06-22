@@ -8,3 +8,46 @@
 }
 
 /* #endregion */
+
+/* #region 电脑端 logo */
+
+[dir=ltr] .md-header__title {
+    margin-left: 0.4rem;
+}
+
+.md-header__button.md-logo {
+    position: relative;
+    width: 7rem;
+    height: 2.0rem;
+    align-self: flex-start;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* #endregion */
+
+/* #region 移动端 logo */
+
+.md-nav__title[for="__drawer"] .md-nav__button.md-logo img,
+.md-nav__title[for="__drawer"] .md-nav__button.md-logo svg {
+    display: inline-block;
+    height: 5rem;
+}
+
+@media screen and (max-width: 76.234375em) {
+    .md-nav--primary .md-nav__title[for="__drawer"] {
+        padding-top: 5.5rem;
+        height: 8rem;
+        text-align: center;
+    }
+}
+
+/* #endregion */

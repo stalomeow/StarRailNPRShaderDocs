@@ -8,10 +8,10 @@ theme:
   name: material
   language: en
   favicon: assets/favicon.ico
+  logo: assets/logo.png
 
   icon:
     repo: fontawesome/brands/github
-    logo: octicons/stack-24
     edit: material/pencil
 
   palette:
@@ -24,7 +24,7 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: blue grey
       toggle:
         icon: material/circle-slice-8
         name: Light Mode
