@@ -4,24 +4,26 @@
 
 ![角色渲染控制器](../../assets/character-rendering-controller.png)
 
-利用该组件可以很方便地控制一些渲染参数。相关的 C# API 如下：
+利用该组件可以很方便地控制一些渲染参数。
 
-## Properties
+## C# API
 
-|Name|Description|
+### Properties
+
+|名称|描述|
 |:-|:-|
-|RampCoolWarmMix|冷暖 Ramp 图的混合程度。0 是冷，1 是暖。范围 $[0, 1]$。|
-|DitherAlpha|角色的透明度。范围 $[0, 1]$。|
-|ExpressionCheekIntensity|脸颊泛红程度。范围 $[0, 1]$。|
-|ExpressionShyIntensity|害羞程度。范围 $[0, 1]$。|
-|ExpressionShadowIntensity|黑脸程度。范围 $[0, 1]$。|
-|IsCastingShadow|是否投射阴影。|
+|`RampCoolWarmMix`|冷暖 Ramp 图的混合程度。0 是冷，1 是暖。范围 $[0, 1]$。|
+|`DitherAlpha`|角色的透明度。范围 $[0, 1]$。|
+|`ExpressionCheekIntensity`|脸颊泛红程度。范围 $[0, 1]$。|
+|`ExpressionShyIntensity`|害羞程度。范围 $[0, 1]$。|
+|`ExpressionShadowIntensity`|黑脸程度。范围 $[0, 1]$。|
+|`IsCastingShadow`|是否投射阴影。|
 
-## Methods
+### Methods
 
-|Name|Description|
+|名称|描述|
 |:-|:-|
-|UpdateRendererList|更新控制器内部缓存的 `Renderer` 列表。|
+|`UpdateRendererList`|更新控制器内部缓存的 `Renderer` 列表。|
 
 ## SRP Batcher
 

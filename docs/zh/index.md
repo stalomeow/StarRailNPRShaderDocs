@@ -14,6 +14,7 @@
 - 定制的 Bloom 和 Tonemapping。
 - 定制的材质编辑器。
 - 自动化流程（平滑模型法线、设置贴图、生成材质、构建），集成 Unity Preset 系统。
+- 在 Windows 和 Android 上经过验证。
 
 ## 赞助
 

@@ -1,10 +1,12 @@
 # 自动生成材质
 
-该 package 提供了工具，可以根据 `material.json` 自动生成 Material 或者覆写一个已经存在的 Material。
+该项目提供了工具，可以根据 `material.json` 自动生成材质或者覆写一个已经存在的材质。
 
-![自动生成 Material](../../assets/auto-generate-material.gif)
+## 基本用法
 
-这个工具生成的结果仅供参考。一些细节的参数，比如背面是否用 UV2 等，仍然需要自己手动设置。
+![自动生成材质](../../assets/auto-generate-material.gif)
+
+这个工具生成的结果仅供参考。一些细节的参数，比如 `BackFaceUseUV2` 等，仍然需要自己手动设置。
 
 双击转换后的 `material.json` 文件，可以打开 `HSR Material Viewer`。它能帮你更轻松地浏览 `material.json` 文件。
 
@@ -16,21 +18,21 @@
 
 ### Properties
 
-|Name|Description|
+|名称|描述|
 |:-|:-|
-|Order|优先级。数字越小优先级越高。|
-|SupportedShaderMap|该类支持的 Shader 表。Key 是游戏里的 Shader 名，Value 是转换后的项目中的 Shader 名。|
+|`Order`|优先级。数字越小优先级越高。|
+|`SupportedShaderMap`|该类支持的 Shader 表。Key 是游戏里的 Shader 名，Value 是转换后的项目中的 Shader 名。|
 
 ### Methods
 
 传入的参数为 `material.json` 中的对应信息，返回需要设置到 Material 上的属性列表。
 
-|Name|Description|
+|名称|描述|
 |:-|:-|
-|ApplyTextures|设置 Material 的 Texture 属性。|
-|ApplyInts|设置 Material 的 Int 属性。|
-|ApplyFloats|设置 Material 的 Float 属性。|
-|ApplyColors|设置 Material 的 Color 属性。|
+|`ApplyTextures`|设置 Material 的 Texture 属性。|
+|`ApplyInts`|设置 Material 的 Int 属性。|
+|`ApplyFloats`|设置 Material 的 Float 属性。|
+|`ApplyColors`|设置 Material 的 Color 属性。|
 
 ### 示例
 

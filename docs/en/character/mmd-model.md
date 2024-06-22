@@ -4,9 +4,12 @@
 
     MMD models do not contain some detailed information so the final rendering result may not fully meet your expectation.
 
-Additional steps are required:
+## Use MMD Mode
 
-- Change the `Model Type` to `MMD` on the material.
-- Drag the `Transform` of the head bone to the `Head Bone` field.
+Change the `Model Type` to `MMD` on the material.
 
-    ![Sync Head Bone](../../assets/mmd-head-bone-sync.png)
+## Synchronize Head Bone
+
+Drag the `Transform` of the head bone to the `Head Bone` field.
+
+![Synchronize Head Bone](../../assets/mmd-head-bone-sync.png)

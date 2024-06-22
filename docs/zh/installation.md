@@ -1,6 +1,12 @@
 # 安装
 
-这个包要求 **Unity >= 2022.3** 且已经在 Windows 和 Android 上经过验证。由于 SRP & URP 的 API 经常发生变化，建议**别用太高的版本**。
+## 要求
+
+- Unity >= 2022.3.20
+- Core RP Library >= 14.0.10
+- Universal RP >= 14.0.10
+
+由于一些 API 经常发生变化，建议别用太高的版本。
 
 ## 从 git URL 安装
 
@@ -8,23 +14,24 @@
 
     ![安装](../assets/install.png)
 
-2. 在文本框中输入 `https://github.com/stalomeow/StarRailNPRShader.git`。
+2. 在文本框中输入：
+
+    ``` txt
+    https://github.com/stalomeow/StarRailNPRShader.git
+    ```
+
 3. 选择 `Add`。
 
 ## 渲染管线设置
 
-- 用 linear color space，别用 gamma。
-- 用 `Forward` 或 `Forward+` 渲染路径。
-- 关 Depth priming。
-- 在 Renderer 上加 `Honkai Star Rail` RendererFeature。
+- 在 Renderer 上添加 `Honkai Star Rail` RendererFeature。它内置了屏幕空间阴影，所以接下来要把 URP 的 `ScreenSpaceShadows` RendererFeature 都移除掉。
+- 使用 Linear color space。
+- 使用 Forward 或 Forward+ 渲染路径。
+- 关闭 Depth priming。
+- 推荐打开 HDR。
 
-## 推荐的后处理设置
+## 后处理设置
 
 后处理很重要，请务必加上它。
 
 ![后处理设置](../assets/postprocessing.png)
-
-## 其他建议
-
-- 推荐开 HDR。
-- 该项目自己实现了屏幕空间阴影，请别再加 URP 的 `ScreenSpaceShadows` RendererFeature。

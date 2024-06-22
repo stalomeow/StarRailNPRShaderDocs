@@ -1,31 +1,48 @@
 # Asset and Material
 
-## Working with Asset Processor
+## Processing Assets
 
-After importing an asset, if its path meets certain requirements, the asset processor will automatically apply presets to it without the need for manual modification of the asset settings. For models, it can also automatically smooth their normals.
+Textures and models of characters need to be set up correctly before they can be used. This is a repetitive and tedious task, so this project provides an asset processor. After importing an asset, if its path meets certain requirements, the asset processor will automatically apply presets to it without the need for manual modification of the asset settings. For models, it can also automatically smooth their normals.
 
-You can configure the asset processor in `Project Settings/StarRail NPR Shader/HSR Asset Processors`.
+Default texture filename formats:
 
-![Asset processor](../../assets/asset-processor.png)
+- `Avatar_*_Ramp*`
+- `Avatar_*_LightMap*`
+- `Avatar_*_Color*`
+- `Avatar_*_Stockings*`
+- `M_*_*_FaceMap*` or `W_*_*_FaceMap*`
+- `M_*_*_Face_ExpressionMap*` or `W_*_*_Face_ExpressionMap*`
 
-- `Match Mode`: The matching mode for assets.
+Default model filename formats:
 
-    - `Name Glob`: `Path Pattern` uses a syntax similar to Unix Glob, ignoring case, to match the asset's name (including the extension).
+- `Avatar_*_*.fbx` or `Art_*_*.fbx`
 
-        - `*`: Matches 0 or more characters.
-        - `?`: Matches exactly 1 character.
-        - `|`: Separates multiple Globs. For example, `a.* | b.*` means matching either `a.*` or `b.*`.
+By default, case is ignored. `*` represents zero or more characters.
 
-    - `Regex`: Treats `Path Pattern` as a regular expression to match the complete asset path.
-    - `Equals`: Matches successfully if the complete asset path is equal to `Path Pattern`.
-    - `Contains`: Matches successfully if the complete asset path contains `Path Pattern`.
-    - `Starts With`: Matches successfully if the complete asset path starts with `Path Pattern`.
-    - `Ends With`: Matches successfully if the complete asset path ends with `Path Pattern`.
+??? question "Configure Asset Processor"
 
-- `Path Pattern`: The pattern string.
-- `Ignore Case`: Whether to ignore case during matching.
-- `Custom Preset`: Custom preset. If empty, the default preset is used.
-- `Smooth Normal Store Mode`: The mode for storing smoothed normals in models.
+    The asset processor can be configured in `Project Settings/StarRail NPR Shader/HSR Asset Processors`.
+
+    ![Asset Processor](../../assets/asset-processor.png)
+
+    - `Match Mode`: The matching mode for assets.
+
+        - `Name Glob`: `Path Pattern` uses a syntax similar to Unix Glob, ignoring case, to match the asset's name (including the extension).
+
+            - `*`: Matches zero or more characters.
+            - `?`: Matches exactly one character.
+            - `|`: Separates multiple Globs. For example, `a.* | b.*` means matching either `a.*` or `b.*`.
+
+        - `Regex`: Treats `Path Pattern` as a regular expression to match the complete asset path.
+        - `Equals`: Matches successfully if the complete asset path is equal to `Path Pattern`.
+        - `Contains`: Matches successfully if the complete asset path contains `Path Pattern`.
+        - `Starts With`: Matches successfully if the complete asset path starts with `Path Pattern`.
+        - `Ends With`: Matches successfully if the complete asset path ends with `Path Pattern`.
+
+    - `Path Pattern`: The pattern string.
+    - `Ignore Case`: Whether to ignore case during matching.
+    - `Custom Preset`: Custom preset. If empty, the default preset is used.
+    - `Smooth Normal Store Mode`: The mode for storing smoothed normals in models.
 
 ## Shaders
 
@@ -38,6 +55,5 @@ You can configure the asset processor in `Project Settings/StarRail NPR Shader/H
 
 ## Materials
 
-- Before setting up the Material, it is necessary to process textures and smooth normals using asset processors.
-- After changing the Material's Shader, remember to reset it.
-- If there is no outline/rim light, adjust the `Model Scale` on the Material.
+- Remember to reset after changing shaders.
+- If there is no Outline/Rim-Light, adjust the `Model Scale` on the Material.

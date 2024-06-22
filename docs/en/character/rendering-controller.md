@@ -2,26 +2,28 @@
 
 The `StarRail Character Rendering Controller` component is automatically added to the root object of the character.
 
-![Character rendering controller](../../assets/character-rendering-controller.png)
+![Character Rendering Controller](../../assets/character-rendering-controller.png)
 
-This component makes it easy to control some rendering parameters. The relevant C# API is as follows:
+This component makes it easy to control some rendering parameters.
 
-## Properties
+## C# API
 
-|Name|Description|
-|:-|:-|
-|RampCoolWarmMix|Blend level of the cool and warm Ramp textures. 0 is cool, 1 is warm. Range $[0, 1]$.|
-|DitherAlpha|Transparency of the character. Range $[0, 1]$.|
-|ExpressionCheekIntensity|Degree of cheek blush. Range $[0, 1]$.|
-|ExpressionShyIntensity|Shyness level. Range $[0, 1]$.|
-|ExpressionShadowIntensity|Darkening of the face. Range $[0, 1]$.|
-|IsCastingShadow|Whether to cast shadows.|
-
-## Methods
+### Properties
 
 |Name|Description|
 |:-|:-|
-|UpdateRendererList|Update the internal cached list of `Renderer` in the controller.|
+|`RampCoolWarmMix`|Blend level of the cool and warm Ramp textures. 0 is cool, 1 is warm. Range $[0, 1]$.|
+|`DitherAlpha`|Transparency of the character. Range $[0, 1]$.|
+|`ExpressionCheekIntensity`|Degree of cheek blush. Range $[0, 1]$.|
+|`ExpressionShyIntensity`|Shyness level. Range $[0, 1]$.|
+|`ExpressionShadowIntensity`|Darkening of the face. Range $[0, 1]$.|
+|`IsCastingShadow`|Whether to cast shadows.|
+
+### Methods
+
+|Name|Description|
+|:-|:-|
+|`UpdateRendererList`|Update the internal cached list of `Renderer` in the controller.|
 
 ## SRP Batcher
 

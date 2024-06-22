@@ -1,6 +1,12 @@
 # Installation
 
-This package requires **Unity >= 2022.3** and is verified on Windows & Android. Since the API of SRP & URP changes frequently, it is recommended **not to use a version that is too high**.
+## Requirements
+
+- Unity >= 2022.3.20
+- Core RP Library >= 14.0.10
+- Universal RP >= 14.0.10
+
+Since the API frequently changes, it is recommended not to use a version that is too high.
 
 ## Install via git URL
 
@@ -8,23 +14,24 @@ This package requires **Unity >= 2022.3** and is verified on Windows & Android. 
 
     ![Install](../assets/install.png)
 
-2. Enter `https://github.com/stalomeow/StarRailNPRShader.git` in the text box.
+2. Enter the following in the text box:
+
+    ```txt
+    https://github.com/stalomeow/StarRailNPRShader.git
+    ```
+
 3. Select `Add`.
 
-## RenderPipeline Settings
+## Render Pipeline Settings
 
-- Use linear color space instead of gamma.
-- Use `Forward` or `Forward+` rendering path.
-- Disable depth priming.
-- Add `Honkai Star Rail` RendererFeature to the renderer.
+- Add `Honkai Star Rail` RendererFeature to the Renderer. It has built-in screen space shadows, so remove the `ScreenSpaceShadows` RendererFeature of URP.
+- Use Linear color space.
+- Use Forward or Forward+ rendering path.
+- Disable Depth priming.
+- It is recommended to enable HDR.
 
-## Recommended Post-processing Settings
+## Post-processing Settings
 
 Post-processing is important; be sure to add it.
 
-![Post-processing settings](../assets/postprocessing.png)
-
-## Other Tips
-
-- It is recommended to turn on HDR.
-- This project implements its own screen space shadows. Please do not add the `ScreenSpaceShadows` RendererFeature of URP again.
+![Post-processing Settings](../assets/postprocessing.png)

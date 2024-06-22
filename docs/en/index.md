@@ -14,6 +14,7 @@ Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: St
 - Custom Bloom and Tonemapping.
 - Custom material editor.
 - Automated workflow (smoothing normals, setting up textures, generating materials, building), integrated with Unity Preset system.
+- Verified on Windows and Android.
 
 ## Sponsor
 
