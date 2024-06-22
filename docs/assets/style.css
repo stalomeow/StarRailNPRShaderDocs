@@ -32,6 +32,14 @@
 
 /* #endregion */
 
+/* #region header 上 GitHub 仓库部分长度 */
+
+.md-source__repository {
+    max-width: calc(100% - 0.6rem); /* 拉长一点，显示全 */
+}
+
+/* #endregion */
+
 /* #region 电脑端 logo */
 
 [dir=ltr] .md-header__title {
