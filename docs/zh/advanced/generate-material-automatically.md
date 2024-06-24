@@ -4,13 +4,13 @@
 
 ## 基本用法
 
-![自动生成材质](../../assets/auto-generate-material.gif)
+![自动生成材质](../../assets/images/auto-generate-material.gif)
 
 这个工具生成的结果仅供参考。一些细节的参数，比如 `BackFaceUseUV2` 等，仍然需要自己手动设置。
 
 双击转换后的 `material.json` 文件，可以打开 `HSR Material Viewer`。它能帮你更轻松地浏览 `material.json` 文件。
 
-![HSR Material Viewer](../../assets/hsr-mat-viewer.gif)
+![HSR Material Viewer](../../assets/images/hsr-mat-viewer.gif)
 
 ## 工具扩展
 

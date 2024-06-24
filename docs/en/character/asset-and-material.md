@@ -23,7 +23,7 @@ By default, case is ignored. `*` represents zero or more characters.
 
     The asset processor can be configured in `Project Settings/StarRail NPR Shader/HSR Asset Processors`.
 
-    ![Asset Processor](../../assets/asset-processor.png)
+    ![Asset Processor](../../assets/images/asset-processor.png)
 
     - `Match Mode`: The matching mode for assets.
 

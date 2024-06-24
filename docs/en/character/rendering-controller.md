@@ -2,7 +2,7 @@
 
 The `StarRail Character Rendering Controller` component is automatically added to the root object of the character.
 
-![Character Rendering Controller](../../assets/character-rendering-controller.png)
+![Character Rendering Controller](../../assets/images/character-rendering-controller.png)
 
 This component makes it easy to control some rendering parameters.
 

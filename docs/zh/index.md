@@ -1,10 +1,10 @@
 # StarRail NPR Shader 文档
 
-基于 Unity URP 的仿星穹铁道渲染 Shader。这不是逆向工程，Shader 代码不可能和游戏里的一模一样，我只是尽力去还原渲染效果。<img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-1.png">
+基于 Unity URP 的仿星穹铁道渲染 Shader。这不是逆向工程，Shader 代码不可能和游戏里的一模一样，我只是尽力去还原渲染效果。![](../assets/stickers/firefly-1.png){.sr-sticker}
 
 |花火|流萤|
 |:-:|:-:|
-|![花~火~大~人~](../assets/sparkle.png)|![流~萤~老~婆~](../assets/firefly.png)|
+|![花~火~大~人~](../assets/images/sparkle.png)|![流~萤~老~婆~](../assets/images/firefly.png)|
 
 ## 核心特点
 
@@ -18,7 +18,7 @@
 
 ## 赞助
 
-如果你喜欢这个项目，可以赞助流萤 <img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-3.png"> 一份橡木蛋糕卷啾！链接：[https://stalomeow.com/#coffee](https://stalomeow.com/#coffee){target="_blank"}。暂时不支持海外赞助哦 ~
+如果你喜欢这个项目，可以赞助流萤 ![](../assets/stickers/firefly-3.png){.sr-sticker} 一份橡木蛋糕卷啾！链接：[https://stalomeow.com/#coffee](https://stalomeow.com/#coffee){target="_blank"}。暂时不支持海外赞助哦 ~
 
 ## 特别感谢
 

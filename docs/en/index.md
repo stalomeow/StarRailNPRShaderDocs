@@ -1,10 +1,10 @@
 # StarRail NPR Shader Docs
 
-Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. The shaders are not 100% accurate because this project is not a reverse engineering - what I do is to replicate the in-game looks to the best of my ability. <img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-1.png">
+Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. The shaders are not 100% accurate because this project is not a reverse engineering - what I do is to replicate the in-game looks to the best of my ability. ![](../assets/stickers/firefly-1.png){.sr-sticker}
 
 |Sparkle|Firefly|
 |:-:|:-:|
-|![Sparkle](../assets/sparkle.png)|![Firefly](../assets/firefly.png)|
+|![Sparkle](../assets/images/sparkle.png)|![Firefly](../assets/images/firefly.png)|
 
 ## Core Features
 
@@ -18,7 +18,7 @@ Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: St
 
 ## Sponsor
 
-If you like this project, you can sponsor Firefly <img class="no-fancybox md-custom-sticker" src="../assets/stickers/firefly-3.png"> with an Oak Cake Rolls, chirp! Link: [https://stalomeow.com/#coffee](https://stalomeow.com/#coffee){target="_blank"}. Currently, only Chinese payment methods are supported ~
+If you like this project, you can sponsor Firefly ![](../assets/stickers/firefly-3.png){.sr-sticker} with an Oak Cake Rolls, chirp! Link: [https://stalomeow.com/#coffee](https://stalomeow.com/#coffee){target="_blank"}. Currently, only Chinese payment methods are supported ~
 
 ## Special Thanks
 

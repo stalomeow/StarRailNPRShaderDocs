@@ -2,7 +2,7 @@
 
 角色的根物体上会自动添加 `StarRail Character Rendering Controller` 组件。
 
-![角色渲染控制器](../../assets/character-rendering-controller.png)
+![角色渲染控制器](../../assets/images/character-rendering-controller.png)
 
 利用该组件可以很方便地控制一些渲染参数。
 

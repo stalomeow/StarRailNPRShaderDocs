@@ -1,4 +1,5 @@
 site_name: StarRail NPR Shader Docs
+site_url: https://srshader.stalomeow.com/
 site_description: "Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail."
 repo_name: stalomeow/StarRailNPRShader
 repo_url: https://github.com/stalomeow/StarRailNPRShader
@@ -43,8 +44,13 @@ theme:
     - search.highlight
     - search.share
 
+extra:
+  version:
+    provider: mike
+    alias: true
+
 extra_css:
-  - assets/style.css
+  - assets/stylesheets/custom.css
 
 extra_javascript:
   # - assets/javascripts/mathjax.js
@@ -108,6 +114,16 @@ plugins:
       lang:
         - zh
         - en
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+      # css minify 和 i18n 一起用有 bug
+      # css_files:
+      #   - assets/stylesheets/custom.css
   - i18n:
       docs_structure: folder
       languages:

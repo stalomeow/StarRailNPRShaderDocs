@@ -12,7 +12,7 @@
 
 1. 在 Package Manager 的添加菜单中选择 `Add package from git URL...`。
 
-    ![安装](../assets/install.png)
+    ![安装](../assets/images/install.png)
 
 2. 在文本框中输入：
 
@@ -34,4 +34,4 @@
 
 后处理很重要，请务必加上它。
 
-![后处理设置](../assets/postprocessing.png)
+![后处理设置](../assets/images/postprocessing.png)

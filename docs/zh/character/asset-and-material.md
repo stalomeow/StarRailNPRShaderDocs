@@ -23,7 +23,7 @@
 
     可以在 `Project Settings/StarRail NPR Shader/HSR Asset Processors` 中配置资产处理器。
 
-    ![资产处理器](../../assets/asset-processor.png)
+    ![资产处理器](../../assets/images/asset-processor.png)
 
     - `Match Mode`：资产的匹配方式。
 

@@ -12,7 +12,7 @@ Since the API frequently changes, it is recommended not to use a version that is
 
 1. Select `Add package from git URL...` from the add menu of Package Manager.
 
-    ![Install](../assets/install.png)
+    ![Install](../assets/images/install.png)
 
 2. Enter the following in the text box:
 
@@ -34,4 +34,4 @@ Since the API frequently changes, it is recommended not to use a version that is
 
 Post-processing is important; be sure to add it.
 
-![Post-processing Settings](../assets/postprocessing.png)
+![Post-processing Settings](../assets/images/postprocessing.png)

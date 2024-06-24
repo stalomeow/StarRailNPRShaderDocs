@@ -12,4 +12,4 @@
 
 将头部骨骼的 `Transform` 拖给 `Head Bone` 字段。
 
-![同步头骨骼](../../assets/mmd-head-bone-sync.png)
+![同步头骨骼](../../assets/images/mmd-head-bone-sync.png)

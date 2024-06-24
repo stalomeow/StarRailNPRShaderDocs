@@ -12,4 +12,4 @@ Change the `Model Type` to `MMD` on the material.
 
 Drag the `Transform` of the head bone to the `Head Bone` field.
 
-![Synchronize Head Bone](../../assets/mmd-head-bone-sync.png)
+![Synchronize Head Bone](../../assets/images/mmd-head-bone-sync.png)
