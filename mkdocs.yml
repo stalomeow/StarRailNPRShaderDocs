@@ -128,9 +128,9 @@ plugins:
       docs_structure: folder
       languages:
         - locale: en
-          default: true
           name: English
           build: true
+          default: true
         - locale: zh
           name: 简体中文
           build: true
