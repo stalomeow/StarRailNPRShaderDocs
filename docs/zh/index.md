@@ -2,10 +2,6 @@
 
 基于 Unity URP 的仿星穹铁道渲染 Shader。这不是逆向工程，Shader 代码不可能和游戏里的一模一样，我只是尽力去还原渲染效果。![](../assets/stickers/firefly-1.png){.sr-sticker}
 
-|花火|流萤|
-|:-:|:-:|
-|![花~火~大~人~](../assets/images/sparkle.png)|![流~萤~老~婆~](../assets/images/firefly.png)|
-
 ## 核心特点
 
 - 支持解包模型和 MMD 模型。

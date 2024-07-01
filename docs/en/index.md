@@ -2,10 +2,6 @@
 
 Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. The shaders are not 100% accurate because this project is not a reverse engineering - what I do is to replicate the in-game looks to the best of my ability. ![](../assets/stickers/firefly-1.png){.sr-sticker}
 
-|Sparkle|Firefly|
-|:-:|:-:|
-|![Sparkle](../assets/images/sparkle.png)|![Firefly](../assets/images/firefly.png)|
-
 ## Core Features
 
 - Supports both Game model and MMD model.
