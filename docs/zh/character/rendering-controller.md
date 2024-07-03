@@ -12,11 +12,11 @@
 
 |名称|描述|
 |:-|:-|
-|`RampCoolWarmMix`|冷暖 Ramp 图的混合程度。0 是冷，1 是暖。范围 $[0, 1]$。|
-|`DitherAlpha`|角色的透明度。范围 $[0, 1]$。|
-|`ExpressionCheekIntensity`|脸颊泛红程度。范围 $[0, 1]$。|
-|`ExpressionShyIntensity`|害羞程度。范围 $[0, 1]$。|
-|`ExpressionShadowIntensity`|黑脸程度。范围 $[0, 1]$。|
+|`RampCoolWarmMix`|冷暖 Ramp 图的混合程度。0 是冷，1 是暖。范围 `[0, 1]`。|
+|`DitherAlpha`|角色的透明度。范围 `[0, 1]`。|
+|`ExpressionCheekIntensity`|脸颊泛红程度。范围 `[0, 1]`。|
+|`ExpressionShyIntensity`|害羞程度。范围 `[0, 1]`。|
+|`ExpressionShadowIntensity`|黑脸程度。范围 `[0, 1]`。|
 |`IsCastingShadow`|是否投射阴影。|
 
 ### Methods

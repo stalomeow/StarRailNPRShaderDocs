@@ -12,11 +12,11 @@ This component makes it easy to control some rendering parameters.
 
 |Name|Description|
 |:-|:-|
-|`RampCoolWarmMix`|Blend level of the cool and warm Ramp textures. 0 is cool, 1 is warm. Range $[0, 1]$.|
-|`DitherAlpha`|Transparency of the character. Range $[0, 1]$.|
-|`ExpressionCheekIntensity`|Degree of cheek blush. Range $[0, 1]$.|
-|`ExpressionShyIntensity`|Shyness level. Range $[0, 1]$.|
-|`ExpressionShadowIntensity`|Darkening of the face. Range $[0, 1]$.|
+|`RampCoolWarmMix`|Blend level of the cool and warm Ramp textures. 0 is cool, 1 is warm. Range `[0, 1]`.|
+|`DitherAlpha`|Transparency of the character. Range `[0, 1]`.|
+|`ExpressionCheekIntensity`|Degree of cheek blush. Range `[0, 1]`.|
+|`ExpressionShyIntensity`|Shyness level. Range `[0, 1]`.|
+|`ExpressionShadowIntensity`|Darkening of the face. Range `[0, 1]`.|
 |`IsCastingShadow`|Whether to cast shadows.|
 
 ### Methods
