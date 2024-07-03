@@ -1,8 +1,12 @@
 # Generate Material Automatically
 
-This project provides a tool for automatically generating or overwriting a Material based on the `material.json` file.
+## Prerequisite
+
+You need the ability to export in-game materials as JSON files. These files will be referred to as `material.json` from here on.
 
 ## Basic Usage
+
+This project provides a tool for automatically generating or overwriting a Material based on the `material.json` file.
 
 ![Generate Material Automatically](../../assets/images/auto-generate-material.gif)
 

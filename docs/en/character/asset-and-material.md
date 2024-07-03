@@ -1,5 +1,13 @@
 # Asset and Material
 
+## Obtaining Assets
+
+Using this Shader requires a lot of ripped assets, which you need to obtain yourself. This project does not provide assets, tools, or tutorials to help you obtain assets.
+
+!!! info "Official MMD Models"
+
+    Download link: [https://www.aplaybox.com/u/516827875](https://www.aplaybox.com/u/516827875){target="_blank"}. MMD models lack some detailed information, so the rendering may not be as good as ripped models.
+
 ## Processing Assets
 
 Textures and models of characters need to be set up correctly before they can be used. This is a repetitive and tedious task, so this project provides an asset processor. After importing an asset, if its path meets certain requirements, the asset processor will automatically apply presets to it without the need for manual modification of the asset settings. For models, it can also automatically smooth their normals.
@@ -53,7 +61,11 @@ By default, case is ignored. `*` represents zero or more characters.
 - Honkai Star Rail/Character/FaceMask
 - Honkai Star Rail/Character/Hair
 
+
 ## Materials
 
-- Remember to reset after changing shaders.
-- If there is no Outline/Rim-Light, adjust the `Model Scale` on the Material.
+- It is recommended to reset the material after changing its shader.
+- If using MMD models, set `Model Type` to `MMD` at the top of the material.
+- If there is no Outline/Rim-Light, adjust the `Model Scale` at the top of the material.
+- If the outline flickers or obscures the model, adjust the `Z Offset` value in the material's `Outline` section. Typically, this is a small negative number like `-1e-05` or `-1e-04`.
+- If self shadow produces strange patterns (Shadow Acne), adjust the `Depth Bias` and `Normal Bias` in the material's `Self Shadow Caster` section. Typically, this is a negative number of the same order of magnitude as `-0.01`.

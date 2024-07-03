@@ -6,7 +6,7 @@
 - Core RP Library >= 14.0.10
 - Universal RP >= 14.0.10
 
-Since the API frequently changes, it is recommended not to use a version that is too high.
+Since the API frequently changes, it is recommended not to use a version that is too high. If any error occurs after installation, the version is inappropriate.
 
 ## Install via git URL
 
@@ -24,11 +24,21 @@ Since the API frequently changes, it is recommended not to use a version that is
 
 ## Render Pipeline Settings
 
-- Add `Honkai Star Rail` RendererFeature to the Renderer. It has built-in screen space shadows, so remove the `ScreenSpaceShadows` RendererFeature of URP.
-- Use Linear color space.
-- Use Forward or Forward+ rendering path.
-- Disable Depth priming.
+- Add `Honkai Star Rail` Renderer Feature to the Universal Renderer. It has built-in screen space shadows, so remove the `ScreenSpaceShadows` Renderer Feature of URP.
+
+    ![Renderer Feature](../assets/images/renderer-feature.png)
+
+- Use Linear Color Space.
+
+    ![Linear Color Space](../assets/images/linear-color-space.png)
+
+- Use Forward or Forward+ Rendering Path and disable Depth Priming.
+
+    ![Rendering Path](../assets/images/rendering-path.png)
+
 - It is recommended to enable HDR.
+
+    ![HDR](../assets/images/hdr.png)
 
 ## Post-processing Settings
 

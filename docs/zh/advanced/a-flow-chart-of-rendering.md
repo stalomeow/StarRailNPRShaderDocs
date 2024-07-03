@@ -1,32 +1,34 @@
-# 该管线的大致流程图
+# 渲染流程图
 
 ``` mermaid
 flowchart TD
     URPShadowCaster[URP ShadowCaster] --> StarRail1
 
     subgraph StarRail1[Honkai Star Rail]
-        PerObjShadowCaster([MainLight PerObjectShadowCaster])
+        PerObjSceneShadowCaster([MainLight Per-Object Scene ShadowCaster]) --> PerObjSelfShadowCaster
+        PerObjSelfShadowCaster([MainLight Per-Object Self ShadowCaster])
     end
 
     StarRail1 --> URPDepthPrepass[URP DepthPrepass]
     URPDepthPrepass --> StarRail2
 
     subgraph StarRail2[Honkai Star Rail]
-        ScreenSpaceShadow([Generate ScreenSpaceShadowMap]) --> ScreenSpaceShadowKeyword
-        ScreenSpaceShadowKeyword([_MAIN_LIGHT_SHADOWS_SCREEN])
+        HairDepthPrepass([Hair DepthPrepass]) --> EnableScreenSpaceShadow
+        EnableScreenSpaceShadow([Enable ScreenSpaceShadow])
     end
 
     StarRail2 --> URPOpaque[URP Opaque]
     URPOpaque --> StarRail3
 
     subgraph StarRail3[Honkai Star Rail]
-        CascadedShadow(["_MAIN_LIGHT_SHADOWS_CASCADE"])
-        CascadedShadow --> SROpaque
+        DisableScreenSpaceShadow([Disable ScreenSpaceShadow])
+        DisableScreenSpaceShadow --> SROpaque
 
         subgraph SROpaque["Opaque"]
             direction LR
             SROpaque1([Opaque 1]) --> SROpaque2([Opaque 2])
-            SROpaque2 --> SROpaque3([Opaque 3])
+            SROpaque2 --> SRHair([Hair])
+            SRHair --> SROpaque3([Opaque 3])
             SROpaque3 --> SROpaqueOutline([Outline])
         end
     end
@@ -47,4 +49,6 @@ flowchart TD
     StarRail4 --> URPPost[URP PostProcess]
 ```
 
-使用普通 URP Shader 的透明物体和角色身上的透明物体被分成了两批渲染，可能会出问题。
+!!! info "注意"
+
+    使用普通 URP Shader 的透明物体和角色身上的透明物体被分成了两批渲染，可能会出问题。

@@ -1,8 +1,12 @@
 # 自动生成材质
 
-该项目提供了工具，可以根据 `material.json` 自动生成材质或者覆写一个已经存在的材质。
+## 前提
+
+你需要具备将游戏内材质导出为 JSON 文件的能力。下面将这类文件简称为 `material.json`。
 
 ## 基本用法
+
+该项目提供了工具，可以根据 `material.json` 自动生成材质或者覆写一个已经存在的材质。
 
 ![自动生成材质](../../assets/images/auto-generate-material.gif)
 

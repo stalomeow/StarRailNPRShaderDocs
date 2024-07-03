@@ -151,10 +151,10 @@ plugins:
             Character: 角色
             Asset and Material: 资产和材质
             Rendering Controller: 渲染控制器
-            MMD Model: MMD 模型
-            Advanced: 高级
             Generate Material Automatically: 自动生成材质
-            A Rough Flow Chart of This Pipeline: 该管线的大致流程图
+            Advanced: 高级
+            A Flow Chart of Rendering: 渲染流程图
+            Sample Character Shadow: 采样角色阴影
 
 nav:
   - Home: index.md
@@ -162,7 +162,7 @@ nav:
   - Character:
     - Asset and Material: character/asset-and-material.md
     - Rendering Controller: character/rendering-controller.md
-    - MMD Model: character/mmd-model.md
+    - Generate Material Automatically: character/generate-material-automatically.md
   - Advanced:
-    - Generate Material Automatically: advanced/generate-material-automatically.md
-    - A Rough Flow Chart of This Pipeline: advanced/a-rough-flow-chart-of-this-pipeline.md
+    - A Flow Chart of Rendering: advanced/a-flow-chart-of-rendering.md
+    - Sample Character Shadow: advanced/sample-character-shadow.md
