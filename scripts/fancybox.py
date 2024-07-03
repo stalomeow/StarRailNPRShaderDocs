@@ -1,5 +1,6 @@
 import json
 import logging
+import posixpath
 import re
 
 from mkdocs.plugins import event_priority
@@ -86,6 +87,13 @@ def wrap_img(match: re.Match, skip_class, meta):
         caption = re.search(r"alt=[\"]([^\"]+)", img_attr)
         caption = caption.group(1) if caption else ""
 
+        if "fancybox-thumbnail" in classes:
+            filename, ext = posixpath.splitext(src)
+            filename = filename.removesuffix("-thumbnail")
+            href = filename + ext
+        else:
+            href = src
+
         if src.endswith(("#only-dark", "#gh-dark-mode-only")):
             theme = "fancybox-only-dark"
         elif src.endswith(("#only-light", "#gh-light-mode-only")):
@@ -93,7 +101,7 @@ def wrap_img(match: re.Match, skip_class, meta):
         else:
             theme = ""
 
-        a_tag = f'<a href="{src}" data-fancybox data-caption="{caption}">{img_tag}</a>'
+        a_tag = f'<a href="{href}" data-fancybox data-caption="{caption}">{img_tag}</a>'
         return f'<figure {theme}>{a_tag}<figcaption>{caption}</figcaption></figure>'
     except Exception as e:
         log.warning(f"Error in wrapping img tag with fancybox: {e} {match.group(0)}")

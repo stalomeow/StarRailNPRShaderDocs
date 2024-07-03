@@ -1,5 +1,7 @@
 # StarRail NPR Shader Docs
 
+![May this journey lead us starward](../assets/banners/en-thumbnail.png){.fancybox-thumbnail}
+
 Fan-made shaders for Unity URP attempting to replicate the shading of Honkai: Star Rail. ![](../assets/stickers/firefly-1.png){.sr-sticker}
 
 ## Core Features

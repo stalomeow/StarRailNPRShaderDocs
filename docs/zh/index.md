@@ -1,5 +1,7 @@
 # StarRail NPR Shader 文档
 
+![愿此行，终抵群星](../assets/banners/cn-thumbnail.png){.fancybox-thumbnail}
+
 基于 Unity URP 的仿星穹铁道渲染 Shader。![](../assets/stickers/firefly-1.png){.sr-sticker}
 
 ## 核心特点
