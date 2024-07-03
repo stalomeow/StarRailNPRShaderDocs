@@ -15,18 +15,18 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/installation/"/>
     </url>
     <url>
-        <loc>https://srshader.stalomeow.com/v2.8/advanced/a-rough-flow-chart-of-this-pipeline/</loc>
+        <loc>https://srshader.stalomeow.com/v2.8/advanced/a-flow-chart-of-rendering/</loc>
         <lastmod>2024-07-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8/advanced/a-rough-flow-chart-of-this-pipeline/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/advanced/a-rough-flow-chart-of-this-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8/advanced/a-flow-chart-of-rendering/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/advanced/a-flow-chart-of-rendering/"/>
     </url>
     <url>
-        <loc>https://srshader.stalomeow.com/v2.8/advanced/generate-material-automatically/</loc>
+        <loc>https://srshader.stalomeow.com/v2.8/advanced/sample-character-shadow/</loc>
         <lastmod>2024-07-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8/advanced/generate-material-automatically/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/advanced/generate-material-automatically/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8/advanced/sample-character-shadow/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/advanced/sample-character-shadow/"/>
     </url>
     <url>
         <loc>https://srshader.stalomeow.com/v2.8/character/asset-and-material/</loc>
@@ -36,11 +36,11 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/character/asset-and-material/"/>
     </url>
     <url>
-        <loc>https://srshader.stalomeow.com/v2.8/character/mmd-model/</loc>
+        <loc>https://srshader.stalomeow.com/v2.8/character/generate-material-automatically/</loc>
         <lastmod>2024-07-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8/character/mmd-model/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/character/mmd-model/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8/character/generate-material-automatically/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8zh/character/generate-material-automatically/"/>
     </url>
     <url>
         <loc>https://srshader.stalomeow.com/v2.8/character/rendering-controller/</loc>
@@ -64,18 +64,18 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8installation/"/>
     </url>
     <url>
-        <loc>https://srshader.stalomeow.com/v2.8/zh/advanced/a-rough-flow-chart-of-this-pipeline/</loc>
+        <loc>https://srshader.stalomeow.com/v2.8/zh/advanced/a-flow-chart-of-rendering/</loc>
         <lastmod>2024-07-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8/zh/advanced/a-rough-flow-chart-of-this-pipeline/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8advanced/a-rough-flow-chart-of-this-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8/zh/advanced/a-flow-chart-of-rendering/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8advanced/a-flow-chart-of-rendering/"/>
     </url>
     <url>
-        <loc>https://srshader.stalomeow.com/v2.8/zh/advanced/generate-material-automatically/</loc>
+        <loc>https://srshader.stalomeow.com/v2.8/zh/advanced/sample-character-shadow/</loc>
         <lastmod>2024-07-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8/zh/advanced/generate-material-automatically/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8advanced/generate-material-automatically/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8/zh/advanced/sample-character-shadow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8advanced/sample-character-shadow/"/>
     </url>
     <url>
         <loc>https://srshader.stalomeow.com/v2.8/zh/character/asset-and-material/</loc>
@@ -85,11 +85,11 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8character/asset-and-material/"/>
     </url>
     <url>
-        <loc>https://srshader.stalomeow.com/v2.8/zh/character/mmd-model/</loc>
+        <loc>https://srshader.stalomeow.com/v2.8/zh/character/generate-material-automatically/</loc>
         <lastmod>2024-07-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8/zh/character/mmd-model/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8character/mmd-model/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.8/zh/character/generate-material-automatically/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.8character/generate-material-automatically/"/>
     </url>
     <url>
         <loc>https://srshader.stalomeow.com/v2.8/zh/character/rendering-controller/</loc>
