@@ -154,7 +154,7 @@ plugins:
             Generate Material Automatically: 自动生成材质
             Advanced: 高级
             Stencil Value: 模板值
-            A Flowchart of Rendering: 渲染流程图
+            Rendering Flowchart: 渲染流程图
             Sample Character Shadow: 采样角色阴影
 
 nav:
@@ -166,5 +166,5 @@ nav:
     - Generate Material Automatically: character/generate-material-automatically.md
   - Advanced:
     - Stencil Value: advanced/stencil-value.md
-    - A Flowchart of Rendering: advanced/a-flowchart-of-rendering.md
+    - Rendering Flowchart: advanced/rendering-flowchart.md
     - Sample Character Shadow: advanced/sample-character-shadow.md
