@@ -1,4 +1,4 @@
-# A Flow Chart of Rendering
+# A Flowchart of Rendering
 
 ``` mermaid
 flowchart TD

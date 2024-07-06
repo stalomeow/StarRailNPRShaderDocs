@@ -153,7 +153,7 @@ plugins:
             Rendering Controller: 渲染控制器
             Generate Material Automatically: 自动生成材质
             Advanced: 高级
-            A Flow Chart of Rendering: 渲染流程图
+            A Flowchart of Rendering: 渲染流程图
             Sample Character Shadow: 采样角色阴影
 
 nav:
@@ -164,5 +164,5 @@ nav:
     - Rendering Controller: character/rendering-controller.md
     - Generate Material Automatically: character/generate-material-automatically.md
   - Advanced:
-    - A Flow Chart of Rendering: advanced/a-flow-chart-of-rendering.md
+    - A Flowchart of Rendering: advanced/a-flowchart-of-rendering.md
     - Sample Character Shadow: advanced/sample-character-shadow.md
