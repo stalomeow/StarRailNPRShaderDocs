@@ -61,7 +61,7 @@ Default model filename formats:
 
 By default, case is ignored. `*` represents zero or more characters.
 
-??? question "Configure Asset Processor"
+??? info "Configure Asset Processor"
 
     The asset processor can be configured in `Project Settings/StarRail NPR Shader/HSR Asset Processors`.
 
