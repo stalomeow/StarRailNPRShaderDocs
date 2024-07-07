@@ -16,22 +16,15 @@ If you are using MMD models, you need to drag the `Transform` of the head bone t
 
 ## C# API
 
-### Properties
-
-|Name|Description|
-|:-|:-|
-|`RampCoolWarmMix`|Blend level of the cool and warm Ramp textures. 0 is cool, 1 is warm. Range `[0, 1]`.|
-|`DitherAlpha`|Transparency of the character. Range `[0, 1]`.|
-|`ExpressionCheekIntensity`|Degree of cheek blush. Range `[0, 1]`.|
-|`ExpressionShyIntensity`|Shyness level. Range `[0, 1]`.|
-|`ExpressionShadowIntensity`|Darkening of the face. Range `[0, 1]`.|
-|`IsCastingShadow`|Whether to cast shadows.|
-
-### Methods
-
-|Name|Description|
-|:-|:-|
-|`UpdateRendererList`|Update the internal cached list of `Renderer` in the controller.|
+|Member Type|Name|Description|
+|:-|:-|:-|
+|Property|`RampCoolWarmMix`|Blend level of the cool and warm Ramp textures. 0 is cool, 1 is warm. Range `[0, 1]`.|
+|Property|`DitherAlpha`|Transparency of the character. Range `[0, 1]`.|
+|Property|`ExpressionCheekIntensity`|Degree of cheek blush. Range `[0, 1]`.|
+|Property|`ExpressionShyIntensity`|Shyness level. Range `[0, 1]`.|
+|Property|`ExpressionShadowIntensity`|Darkening of the face. Range `[0, 1]`.|
+|Property|`IsCastingShadow`|Whether to cast shadows.|
+|Method|`UpdateRendererList`|Update the internal cached list of `Renderer` in the controller.|
 
 ## SRP Batcher
 

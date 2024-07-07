@@ -1,12 +1,46 @@
-# Asset and Material
+# Asset
 
 ## Obtaining Assets
 
 Using this Shader requires a lot of ripped assets, which you need to obtain yourself. This project does not provide assets, tools, or tutorials to help you obtain assets.
 
-!!! info "Official MMD Models"
+## Model Size
 
-    Download link: [https://www.aplaybox.com/u/516827875](https://www.aplaybox.com/u/516827875){target="_blank"}. MMD models lack some detailed information, so the rendering may not be as good as ripped models.
+Models must be imported at the correct size to ensure proper rendering.
+
+=== "Ripped Models"
+
+    When the model is imported into Unity, set the `Scale Factor` to `1` and uncheck `Convert Units`. (1)
+    { .annotate }
+
+    1. Using AssetStudio as an example. It exports models using the FBX SDK. In the [code](https://github.com/Perfare/AssetStudio/blob/d158e864b556b5970709c2a52e47944d53aa98a2/AssetStudioFBXNative/api.cpp#L107-L108){target="_blank"}, the `scaleFactor` is used to set the units, with the default being `1cm`.
+
+        ```cpp
+        FbxGlobalSettings& globalSettings = pScene->GetGlobalSettings();
+        globalSettings.SetSystemUnit(FbxSystemUnit(scaleFactor));
+        ```
+
+        The unit for StarRail character models is `1m`. Therefore, before exporting the model, you need to change the `ScaleFactor` to `100` in the export options. However, some people may not change this value or give an arbitrary value, leading to incorrect FBX units.
+
+        ![FBX Scale Factor](../../assets/images/assetstudio-fbx-scale.png)
+
+    ![Model Size Settings](../../assets/images/ripped-model-scale.png)
+
+=== "MMD Models"
+
+    The [official MMD models](https://www.aplaybox.com/u/516827875){target="_blank"} are in PMX format, which Unity does not support. You need to use other tools to export the models to FBX. Below is an example using Blender and [blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools/tree/blender-v4){target="_blank"}.
+
+    MMD models use a unit of `0.08m`, while Blender's default unit is `1m`. Therefore, set the `Scale` to `0.08` when importing into Blender.
+
+    ![Blender Import Settings](../../assets/images/blender-import-settings.png)
+
+    When exporting to FBX, change `Apply Scalings` to `FBX Units Scale` to apply the scaling to the FBX model units.
+
+    ![Blender Export Settings](../../assets/images/blender-export-settings.png)
+
+    After the model is imported into Unity, no further changes are needed.
+
+    ![Model Size Settings](../../assets/images/mmd-model-scale.png)
 
 ## Processing Assets
 
@@ -51,21 +85,3 @@ By default, case is ignored. `*` represents zero or more characters.
     - `Ignore Case`: Whether to ignore case during matching.
     - `Custom Preset`: Custom preset. If empty, the default preset is used.
     - `Smooth Normal Store Mode`: The mode for storing smoothed normals in models.
-
-## Shaders
-
-- Honkai Star Rail/Character/Body
-- Honkai Star Rail/Character/Body (Transparent)
-- Honkai Star Rail/Character/EyeShadow
-- Honkai Star Rail/Character/Face
-- Honkai Star Rail/Character/FaceMask
-- Honkai Star Rail/Character/Hair
-
-
-## Materials
-
-- It is recommended to reset the material after changing its shader.
-- If using MMD models, set `Model Type` to `MMD` at the top of the material.
-- If there is no Outline/Rim-Light, adjust the `Model Scale` at the top of the material.
-- If the outline flickers or obscures the model, adjust the `Z Offset` value in the material's `Outline` section. Typically, this is a small negative number like `-1e-05` or `-1e-04`.
-- If self shadow produces strange patterns (Shadow Acne), adjust the `Depth Bias` and `Normal Bias` in the material's `Self Shadow Caster` section. Typically, this is a negative number of the same order of magnitude as `-0.01`.

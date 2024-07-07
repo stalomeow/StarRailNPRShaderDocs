@@ -1,12 +1,46 @@
-# 资产和材质
+# 资产
 
 ## 获取资产
 
 使用这套 Shader 需要较多解包资产，请自行获取。本项目不提供资产，也不提供工具和教程帮助你获取资产。
 
-!!! info "官方 MMD 模型"
+## 模型大小
 
-    下载链接：[https://www.aplaybox.com/u/516827875](https://www.aplaybox.com/u/516827875){target="_blank"}。MMD 模型缺少一些细节信息，所以渲染出来不如解包模型好看。
+模型必须导入成正确的大小，否则渲染会出错。
+
+=== "解包模型"
+
+    当模型被导入 Unity 后，将 `Scale Factor` 设置为 `1` 并取消勾选 `Convert Units`。(1)
+    { .annotate }
+
+    1. 以 AssetStudio 为例。它使用 FBX SDK 导出模型，[代码](https://github.com/Perfare/AssetStudio/blob/d158e864b556b5970709c2a52e47944d53aa98a2/AssetStudioFBXNative/api.cpp#L107-L108){target="_blank"}中用 `scaleFactor` 设置单位，默认是 `1cm`。
+
+        ``` cpp
+        FbxGlobalSettings& globalSettings = pScene->GetGlobalSettings();
+        globalSettings.SetSystemUnit(FbxSystemUnit(scaleFactor));
+        ```
+
+        星穹铁道角色模型的单位是 `1m`，所以，在导出模型前，需要在 Export options 中把 `ScaleFactor` 改成 `100`。但是，有些人没改这个值，或者随便给了一个值，导致 FBX 单位不对。
+
+        ![FBX Scale Factor](../../assets/images/assetstudio-fbx-scale.png)
+
+    ![模型大小设置](../../assets/images/ripped-model-scale.png)
+
+=== "MMD 模型"
+
+    [官方 MMD 模型](https://www.aplaybox.com/u/516827875){target="_blank"}是 PMX 格式，Unity 不支持，需要使用其他工具将模型导出为 FBX。下面以 Blender 和 [blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools/tree/blender-v4){target="_blank"} 为例。
+
+    MMD 模型的单位是 `0.08m`，Blender 的默认单位是 `1m`，所以，在导入 Blender 时，将 `Scale` 设置为 `0.08`。
+
+    ![Blender 导入设置](../../assets/images/blender-import-settings.png)
+
+    在导出为 FBX 时，将 `Apply Scalings` 改成 `FBX Units Scale`，把缩放应用到 FBX 模型的单位上。
+
+    ![Blender 导出设置](../../assets/images/blender-export-settings.png)
+
+    当模型被导入 Unity 后，什么都不用改。
+
+    ![模型大小设置](../../assets/images/mmd-model-scale.png)
 
 ## 处理资产
 
@@ -27,7 +61,7 @@
 
 默认不区分大小写。`*` 表示 0 个或多个字符。
 
-??? question "配置资产处理器"
+??? info "配置资产处理器"
 
     可以在 `Project Settings/StarRail NPR Shader/HSR Asset Processors` 中配置资产处理器。
 
@@ -51,20 +85,3 @@
     - `Ignore Case`：匹配时是否忽略大小写。
     - `Custom Preset`：自定义预设。如果为空则使用默认的预设。
     - `Smooth Normal Store Mode`：模型平滑法线的保存方式。
-
-## 着色器
-
-- Honkai Star Rail/Character/Body
-- Honkai Star Rail/Character/Body (Transparent)
-- Honkai Star Rail/Character/EyeShadow
-- Honkai Star Rail/Character/Face
-- Honkai Star Rail/Character/FaceMask
-- Honkai Star Rail/Character/Hair
-
-## 材质
-
-- 更换着色器以后建议重置一下材质。
-- 如果使用 MMD 模型，在材质最上面把 `Model Type` 改成 `MMD`。
-- 如果始终没有描边/边缘光，在材质最上面调整一下 `Model Scale`。
-- 如果出现描边闪烁、遮挡模型的情况，在材质 `Outline` 中调整 `Z Offset` 的值。一般是 `-1e-05` 或者 `-1e-04` 这样很小的负值。
-- 如果自阴影出现奇怪的花纹（Shadow Acne），在材质 `Self Shadow Caster` 中调整 `Depth Bias` 和 `Normal Bias`。一般是和 `-0.01` 同数量级的负值。

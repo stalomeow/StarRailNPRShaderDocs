@@ -149,22 +149,22 @@ plugins:
             Home: 首页
             Installation: 安装
             Character: 角色
-            Asset and Material: 资产和材质
+            Asset: 资产
+            Material: 材质
             Rendering Controller: 渲染控制器
-            Generate Material Automatically: 自动生成材质
             Advanced: 高级
             Stencil Value: 模板值
             Rendering Flowchart: 渲染流程图
-            Sample Character Shadow: 采样角色阴影
+            Sampling Character Shadow: 采样角色阴影
 
 nav:
   - Home: index.md
   - Installation: installation.md
   - Character:
-    - Asset and Material: character/asset-and-material.md
+    - Asset: character/asset.md
+    - Material: character/material.md
     - Rendering Controller: character/rendering-controller.md
-    - Generate Material Automatically: character/generate-material-automatically.md
   - Advanced:
     - Stencil Value: advanced/stencil-value.md
     - Rendering Flowchart: advanced/rendering-flowchart.md
-    - Sample Character Shadow: advanced/sample-character-shadow.md
+    - Sampling Character Shadow: advanced/sampling-character-shadow.md
