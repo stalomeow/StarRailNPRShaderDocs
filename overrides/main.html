@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block outdated %}
+  {% if i18n_page_locale == 'en' %}
+    You're not viewing the latest version.
+    <a href="{{ '../' ~ base_url }}">
+      <strong>Click here to go to latest.</strong>
+    </a>
+  {% elif i18n_page_locale == 'zh' %}
+    您查看的不是最新版本。
+    <a href="{{ '../' ~ base_url }}">
+      <strong>点击此处转到最新版本。</strong>
+    </a>
+  {% endif %}
+{% endblock %}

@@ -8,6 +8,7 @@ copyright: Copyright &copy; 2023 - 2024 stalomeow
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   favicon: assets/favicon.ico
   logo: assets/logo-en.png
