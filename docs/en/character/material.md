@@ -12,6 +12,10 @@
 ## Tips
 
 - It is recommended to reset the material after changing its shader.
+- The color and intensity of the main light will affect the character and need to be adjusted to suitable values. You can refer to the settings in the image below.
+
+    ![Main Light Color and Intensity](../../assets/images/directional-light.png)
+
 - If using MMD models, set `Model Type` to `MMD` at the top of the material. MMD models lack some detailed information, so the rendering may not be as good as ripped models.
 - If the outline flickers or obscures the model, adjust the `Z Offset` value in the material's `Outline` section. Typically, this is a small negative number like `-1e-05` or `-1e-04`.
 - If self shadow produces strange patterns (Shadow Acne), adjust the `Depth Bias` and `Normal Bias` in the material's `Self Shadow Caster` section. Typically, this is a negative number of the same order of magnitude as `-0.01`.

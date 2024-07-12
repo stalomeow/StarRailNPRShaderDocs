@@ -12,6 +12,10 @@
 ## 提示
 
 - 更换着色器以后建议重置一下材质。
+- 主光源的颜色和强度会影响角色，需要调整为合适的值。可以参考下图的设置。
+
+    ![主光源的颜色和强度](../../assets/images/directional-light.png)
+
 - 如果使用 MMD 模型，在材质最上面把 `Model Type` 改成 `MMD`。MMD 模型缺少一些细节信息，所以渲染出来不如解包模型好看。
 - 如果出现描边闪烁、遮挡模型的情况，在材质 `Outline` 中调整 `Z Offset` 的值。一般是 `-1e-05` 或者 `-1e-04` 这样很小的负值。
 - 如果自阴影出现奇怪的花纹（Shadow Acne），在材质 `Self Shadow Caster` 中调整 `Depth Bias` 和 `Normal Bias`。一般是和 `-0.01` 同数量级的负值。
