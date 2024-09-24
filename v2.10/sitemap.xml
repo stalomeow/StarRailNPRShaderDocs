@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/installation/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/installation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/installation/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/advanced/rendering-flowchart/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/advanced/rendering-flowchart/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/advanced/rendering-flowchart/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/advanced/sampling-character-shadow/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/advanced/sampling-character-shadow/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/advanced/sampling-character-shadow/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/advanced/stencil-value/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/advanced/stencil-value/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/advanced/stencil-value/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/character/asset/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/character/asset/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/character/asset/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/character/material/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/character/material/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/character/material/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/character/rendering-controller/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10/character/rendering-controller/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10zh/character/rendering-controller/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/installation/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10installation/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/advanced/rendering-flowchart/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/advanced/rendering-flowchart/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10advanced/rendering-flowchart/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/advanced/sampling-character-shadow/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/advanced/sampling-character-shadow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10advanced/sampling-character-shadow/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/advanced/stencil-value/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/advanced/stencil-value/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10advanced/stencil-value/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/character/asset/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/character/asset/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10character/asset/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/character/material/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/character/material/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10character/material/"/>
+    </url>
+    <url>
+        <loc>https://srshader.stalomeow.com/v2.10/zh/character/rendering-controller/</loc>
+        <lastmod>2024-09-24</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://srshader.stalomeow.com/v2.10/zh/character/rendering-controller/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://srshader.stalomeow.com/v2.10character/rendering-controller/"/>
+    </url>
+</urlset>

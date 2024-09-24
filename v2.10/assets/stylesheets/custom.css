@@ -1,0 +1,96 @@
+/* #region 表格相关 */
+
+.md-typeset__table {
+    display: block !important;
+    width: 100% !important;
+}
+
+.md-typeset__table table {
+    display: table !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* #endregion */
+
+/* #region Mermaid 居中 */
+
+.mermaid {
+    text-align: center;
+}
+
+/* #endregion */
+
+/* #region 图片 caption 样式 */
+
+.md-typeset figcaption {
+    opacity: 0.6;
+    font-size: 0.7rem;
+    margin: 0.5em auto !important;
+    font-style: normal !important;
+}
+
+/* #endregion */
+
+/* #region header 上 GitHub 仓库部分长度 */
+
+.md-source__repository {
+    max-width: calc(100% - 0.6rem); /* 拉长一点，显示全 */
+}
+
+/* #endregion */
+
+/* #region 电脑端 logo */
+
+[dir=ltr] .md-header__title {
+    margin-left: 0.4rem;
+}
+
+.md-header__button.md-logo {
+    position: relative;
+    width: 7rem;
+    height: 2.0rem;
+    align-self: flex-start;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* #endregion */
+
+/* #region 移动端 logo */
+
+.md-nav__title[for="__drawer"] .md-nav__button.md-logo img,
+.md-nav__title[for="__drawer"] .md-nav__button.md-logo svg {
+    display: inline-block;
+    height: 5rem;
+}
+
+@media screen and (max-width: 76.234375em) {
+    .md-nav--primary .md-nav__title[for="__drawer"] {
+        padding-top: 5.5rem;
+        height: 8rem;
+        text-align: center;
+    }
+}
+
+/* #endregion */
+
+/* #region SR 表情包 */
+
+.sr-sticker {
+    display: inline-block;
+    margin: 0 10px;
+    width: 60px !important;
+    height: 60px !important;
+    vertical-align: text-bottom;
+}
+
+/* #endregion */
